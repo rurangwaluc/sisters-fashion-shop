@@ -5,6 +5,7 @@ import { users } from '@dispensary/db/schema';
 import { SettingsForm } from './settings-form';
 import { PasswordForm } from './password-form';
 import { StaffAccessForm } from './staff-access-form';
+import { InstallAppCard } from './install-app-card';
 
 export default async function SettingsPage() {
   const owner = await requireOwner();
@@ -92,6 +93,8 @@ export default async function SettingsPage() {
           <SettingsForm settings={safeSettings} />
         </section>
       </section>
+
+      <InstallAppCard />
 
       <PasswordForm />
 

@@ -161,7 +161,7 @@ export default async function DashboardPage() {
             <p className="text-xs font-black uppercase tracking-[0.22em] text-[var(--primary)]">
               Shop today
             </p>
-            <h2 className="boutique-display mt-2 text-4xl font-bold leading-none text-[var(--text)] sm:text-5xl">
+            <h2 className="shop-display mt-2 text-4xl font-bold leading-none text-[var(--text)] sm:text-5xl">
               Today at a glance.
             </h2>
             <p className="mt-3 text-sm font-bold leading-6 text-[var(--muted)]">
@@ -210,7 +210,7 @@ export default async function DashboardPage() {
               <p className="text-xs font-black uppercase tracking-[0.18em] text-[var(--primary)]">
                 Do this
               </p>
-              <h2 className="boutique-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
+              <h2 className="shop-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
                 Start here
               </h2>
             </div>
@@ -267,7 +267,7 @@ export default async function DashboardPage() {
               <p className="text-xs font-black uppercase tracking-[0.18em] text-[var(--primary)]">
                 Check stock
               </p>
-              <h2 className="boutique-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
+              <h2 className="shop-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
                 Items running low
               </h2>
             </div>
@@ -312,7 +312,7 @@ export default async function DashboardPage() {
               <p className="text-xs font-black uppercase tracking-[0.18em] text-[var(--primary)]">
                 Unpaid sales
               </p>
-              <h2 className="boutique-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
+              <h2 className="shop-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
                 Customers who owe
               </h2>
             </div>
@@ -355,7 +355,7 @@ export default async function DashboardPage() {
               <p className="text-xs font-black uppercase tracking-[0.18em] text-[var(--primary)]">
                 Recent sales
               </p>
-              <h2 className="boutique-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
+              <h2 className="shop-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
                 Sales made today
               </h2>
             </div>

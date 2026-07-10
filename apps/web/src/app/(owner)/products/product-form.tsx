@@ -56,7 +56,7 @@ export function ProductForm({ product, backHref }: ProductFormProps) {
           <p className="text-xs font-black uppercase tracking-[0.22em] text-[var(--primary)]">
             Product details
           </p>
-          <h3 className="boutique-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
+          <h3 className="shop-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
             What is this item?
           </h3>
           <p className="mt-2 text-sm font-bold leading-6 text-[var(--muted)]">
@@ -177,7 +177,7 @@ export function ProductForm({ product, backHref }: ProductFormProps) {
           <p className="text-xs font-black uppercase tracking-[0.22em] text-[var(--primary)]">
             Prices
           </p>
-          <h3 className="boutique-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
+          <h3 className="shop-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
             How much does it sell for?
           </h3>
           <p className="mt-2 text-sm font-bold leading-6 text-[var(--muted)]">
@@ -253,7 +253,7 @@ export function ProductForm({ product, backHref }: ProductFormProps) {
           <p className="text-xs font-black uppercase tracking-[0.22em] text-[var(--primary)]">
             Stock
           </p>
-          <h3 className="boutique-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
+          <h3 className="shop-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
             How many are in the shop?
           </h3>
         </div>

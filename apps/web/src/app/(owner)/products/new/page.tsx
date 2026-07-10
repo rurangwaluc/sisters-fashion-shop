@@ -11,7 +11,7 @@ export default function NewProductPage() {
             <p className="text-xs font-black uppercase tracking-[0.22em] text-[var(--primary)]">
               Products
             </p>
-            <h2 className="boutique-display mt-2 text-4xl font-bold leading-none text-[var(--text)] sm:text-5xl">
+            <h2 className="shop-display mt-2 text-4xl font-bold leading-none text-[var(--text)] sm:text-5xl">
               Add product.
             </h2>
             <p className="mt-3 text-sm font-bold leading-6 text-[var(--muted)]">

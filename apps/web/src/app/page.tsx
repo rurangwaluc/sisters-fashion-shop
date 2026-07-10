@@ -27,10 +27,10 @@ export default function HomePage() {
     <main className={styles.page}>
       <header className={styles.header}>
         <Link href="/" className={styles.brand} aria-label="Sisters Fashion Shop home">
-          <span className={styles.logo}>LE</span>
+          <span className={styles.logo}>SF</span>
           <span>
             <span className={styles.brandTop}>Sisters Fashion</span>
-            <span className={styles.brandName}>Boutique</span>
+            <span className={styles.brandName}>Shop</span>
           </span>
         </Link>
 
@@ -69,7 +69,7 @@ export default function HomePage() {
           <p className={styles.kicker}>What it helps with</p>
           <h2>Everything the shop needs to stay organized.</h2>
           <p>
-            A simple internal tool for keeping the boutique’s daily work clear,
+            A simple internal tool for keeping the shop’s daily work clear,
             from product entry to stock checks and sales records.
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function HomePage() {
           <h2>Sign in to manage today’s shop work.</h2>
           <p>
             Use this system to record sales, check products, update stock, follow
-            customer debts, and understand how the boutique is doing.
+            customer debts, and understand how the shop is doing.
           </p>
         </div>
 

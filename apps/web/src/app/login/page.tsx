@@ -55,9 +55,9 @@ export default async function LoginPage() {
           <div className="w-full max-w-md">
             <div className="mb-6 text-center">
               <p className="mb-2 text-xs font-black uppercase tracking-[0.22em] text-[var(--primary)]">
-                Boutique access
+                Shop access
               </p>
-              <h1 className="boutique-display text-5xl font-bold leading-none text-[var(--text)]">
+              <h1 className="shop-display text-5xl font-bold leading-none text-[var(--text)]">
                 Sign in
               </h1>
               <p className="mx-auto mt-4 max-w-sm text-sm leading-6 text-[var(--muted)]">

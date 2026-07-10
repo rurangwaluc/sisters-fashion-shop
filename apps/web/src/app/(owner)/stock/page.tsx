@@ -182,7 +182,7 @@ export default async function StockPage({ searchParams }: StockPageProps) {
             <p className="text-xs font-black uppercase tracking-[0.22em] text-[var(--primary)]">
               Stock
             </p>
-            <h2 className="boutique-display mt-2 text-4xl font-bold leading-none text-[var(--text)] sm:text-5xl">
+            <h2 className="shop-display mt-2 text-4xl font-bold leading-none text-[var(--text)] sm:text-5xl">
               Shop stock.
             </h2>
             <p className="mt-3 text-sm font-bold leading-6 text-[var(--muted)]">
@@ -231,7 +231,7 @@ export default async function StockPage({ searchParams }: StockPageProps) {
             <p className="text-xs font-black uppercase tracking-[0.18em] text-[var(--primary)]">
               Find stock
             </p>
-            <h3 className="boutique-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
+            <h3 className="shop-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
               Products to check
             </h3>
           </div>
@@ -276,7 +276,7 @@ export default async function StockPage({ searchParams }: StockPageProps) {
 
       {filteredRows.length === 0 ? (
         <section className="business-card rounded-3xl p-6 text-center sm:p-10">
-          <h3 className="boutique-display text-3xl font-bold text-[var(--text)]">
+          <h3 className="shop-display text-3xl font-bold text-[var(--text)]">
             No stock found
           </h3>
           <p className="mx-auto mt-2 max-w-sm text-sm font-bold leading-6 text-[var(--muted)]">
@@ -485,7 +485,7 @@ export default async function StockPage({ searchParams }: StockPageProps) {
             <p className="text-xs font-black uppercase tracking-[0.18em] text-[var(--primary)]">
               Recent stock added
             </p>
-            <h3 className="boutique-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
+            <h3 className="shop-display mt-1 text-3xl font-bold leading-none text-[var(--text)]">
               What came in recently
             </h3>
           </div>

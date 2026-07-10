@@ -174,7 +174,7 @@ export default async function SalesPage({ searchParams }: SalesPageProps) {
             No sales yet
           </h3>
           <p className="mx-auto mt-2 max-w-md text-sm font-semibold leading-6 text-[#6B7280] dark:text-[#A3A3A3]">
-            Start by recording the first boutique sale.
+            Start by recording the first shop sale.
           </p>
           <Link
             href="/sales/new"

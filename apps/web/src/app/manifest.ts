@@ -4,22 +4,38 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Sisters Fashion Shop',
     short_name: 'Sisters Fashion',
-    description: 'Mobile-first shop system for boutique sales, stock, customers, and reports.',
+    description:
+      'Internal shop system for sales, stock, customers, expenses, and reports.',
     start_url: '/dashboard',
+    scope: '/',
     display: 'standalone',
     background_color: '#FAFAFC',
     theme_color: '#F05A9D',
-    orientation: 'portrait',
+    categories: ['business', 'productivity'],
     icons: [
       {
-        src: '/window.svg',
+        src: '/icons/icon-192.png',
         sizes: '192x192',
-        type: 'image/svg+xml',
+        type: 'image/png',
+        purpose: 'any',
       },
       {
-        src: '/globe.svg',
+        src: '/icons/icon-512.png',
         sizes: '512x512',
-        type: 'image/svg+xml',
+        type: 'image/png',
+        purpose: 'any',
+      },
+      {
+        src: '/icons/icon-maskable-192.png',
+        sizes: '192x192',
+        type: 'image/png',
+        purpose: 'maskable',
+      },
+      {
+        src: '/icons/icon-maskable-512.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'maskable',
       },
     ],
   };

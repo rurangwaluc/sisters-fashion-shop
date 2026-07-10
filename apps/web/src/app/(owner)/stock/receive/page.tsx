@@ -39,7 +39,7 @@ export default async function ReceiveStockPage({ searchParams }: ReceiveStockPag
             <p className="text-xs font-black uppercase tracking-[0.22em] text-[var(--primary)]">
               Stock
             </p>
-            <h2 className="boutique-display mt-2 text-4xl font-bold leading-none text-[var(--text)] sm:text-5xl">
+            <h2 className="shop-display mt-2 text-4xl font-bold leading-none text-[var(--text)] sm:text-5xl">
               Add stock.
             </h2>
             <p className="mt-3 text-sm font-bold leading-6 text-[var(--muted)]">
@@ -64,7 +64,7 @@ export default async function ReceiveStockPage({ searchParams }: ReceiveStockPag
           <p className="text-xs font-black uppercase tracking-[0.18em] text-[var(--primary)]">
             What this does
           </p>
-          <h3 className="boutique-display mt-2 text-3xl font-bold leading-none text-[var(--text)]">
+          <h3 className="shop-display mt-2 text-3xl font-bold leading-none text-[var(--text)]">
             Stock increases automatically.
           </h3>
 
