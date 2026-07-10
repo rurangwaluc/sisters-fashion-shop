@@ -1,0 +1,514 @@
+.page {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--text);
+  padding: 18px;
+}
+
+.header,
+.hero,
+.collections,
+.visit,
+.footer {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: color-mix(in srgb, var(--card) 94%, transparent);
+  box-shadow: var(--shadow-soft);
+  padding: 12px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  gap: 12px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.logo {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 16px;
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 18px 34px rgba(240, 90, 157, 0.26);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.brandTop,
+.brandName {
+  display: block;
+}
+
+.brandTop {
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.brandName {
+  margin-top: 2px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.nav a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  color: var(--muted);
+  padding: 0 14px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 900;
+  transition:
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.nav a:hover {
+  background: var(--surface);
+  color: var(--text);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ownerAccess,
+.primaryButton,
+.secondaryButton,
+.ghostButton,
+.panelButton {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0 18px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 900;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+.ownerAccess,
+.secondaryButton,
+.ghostButton {
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+
+.primaryButton,
+.panelButton {
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 18px 34px rgba(240, 90, 157, 0.22);
+}
+
+.ownerAccess:hover,
+.primaryButton:hover,
+.secondaryButton:hover,
+.ghostButton:hover,
+.panelButton:hover {
+  transform: translateY(-1px);
+}
+
+.hero {
+  display: flex;
+  min-height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(44px, 6vw, 76px) 16px clamp(38px, 5vw, 64px);
+  text-align: center;
+}
+
+.kicker {
+  margin: 0;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.sectionHeading h2,
+.visit h2 {
+  margin: 16px 0 0;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+.hero h1 {
+  max-width: 880px;
+  font-size: clamp(46px, 7.2vw, 92px);
+  line-height: 0.92;
+}
+
+.heroText {
+  max-width: 720px;
+  margin: 24px auto 0;
+  color: var(--muted);
+  font-size: clamp(15px, 1.4vw, 18px);
+  font-weight: 800;
+  line-height: 1.85;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.heroStrip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: min(880px, 100%);
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.heroStrip span {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: color-mix(in srgb, var(--card) 92%, transparent);
+  color: var(--muted);
+  padding: 16px 14px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.collections,
+.visit {
+  border: 1px solid var(--border);
+  border-radius: 36px;
+  background: var(--card);
+  box-shadow: var(--shadow-soft);
+}
+
+.collections {
+  padding: clamp(24px, 4vw, 48px);
+}
+
+.sectionHeading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(280px, 0.95fr);
+  align-items: end;
+  gap: 28px;
+}
+
+.sectionHeading h2,
+.visit h2 {
+  max-width: 760px;
+  font-size: clamp(42px, 5.4vw, 78px);
+  line-height: 0.94;
+}
+
+.sectionHeading p,
+.visit p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.8;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.categoryCard {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: var(--surface);
+  padding: 24px;
+}
+
+.categoryCard span {
+  display: block;
+  width: 46px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--primary);
+}
+
+.categoryCard h3 {
+  margin: 34px 0 0;
+  color: var(--text);
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.categoryCard p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.75;
+}
+
+.visit {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(290px, 390px);
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 18px;
+  padding: clamp(24px, 4vw, 48px);
+}
+
+.visitContent {
+  min-width: 0;
+}
+
+.contactPanel {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  background: var(--surface);
+  padding: 24px;
+}
+
+.contactPanel span {
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.contactPanel strong {
+  display: block;
+  margin-top: 10px;
+  color: var(--text);
+  font-size: clamp(24px, 2.7vw, 34px);
+  font-weight: 900;
+  line-height: 1.12;
+}
+
+.contactPanel p {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.75;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 14px;
+  align-items: center;
+  padding: 18px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 920px) {
+  .header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .sectionHeading,
+  .visit {
+    grid-template-columns: 1fr;
+  }
+
+  .categoryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding: 8px;
+  }
+
+  .header {
+    border-radius: 22px;
+    padding: 10px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+  }
+
+  .brandTop {
+    font-size: 9px;
+  }
+
+  .brandName {
+    font-size: 15px;
+  }
+
+  .headerActions {
+    gap: 6px;
+  }
+
+  .ownerAccess {
+    min-height: 40px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 38px 8px 30px;
+  }
+
+  .kicker {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 12.5vw, 56px);
+    line-height: 0.95;
+  }
+
+  .heroText {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .heroActions {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-top: 24px;
+  }
+
+  .primaryButton,
+  .secondaryButton,
+  .ghostButton {
+    width: 100%;
+  }
+
+  .heroStrip {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 28px;
+  }
+
+  .heroStrip span {
+    border-radius: 18px;
+    padding: 13px 10px;
+  }
+
+  .collections,
+  .visit {
+    border-radius: 26px;
+    padding: 20px 14px;
+  }
+
+  .sectionHeading h2,
+  .visit h2 {
+    font-size: clamp(38px, 13vw, 56px);
+  }
+
+  .sectionHeading p,
+  .visit p {
+    font-size: 14px;
+  }
+
+  .categoryGrid {
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .categoryCard {
+    border-radius: 22px;
+    padding: 18px;
+  }
+
+  .categoryCard h3 {
+    margin-top: 24px;
+  }
+
+  .contactPanel {
+    border-radius: 22px;
+    padding: 18px;
+  }
+  .footer {
+    padding-top: 14px;
+    font-size: 12px;
+  }
+}

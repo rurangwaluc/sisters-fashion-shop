@@ -1,0 +1,28 @@
+{
+  "name": "@dispensary/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "seed:owner": "tsx src/seed-owner.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "latest",
+    "drizzle-orm": "latest",
+    "postgres": "latest"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "latest",
+    "@types/node": "latest",
+    "drizzle-kit": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  },
+  "exports": {
+    "./*": "./src/*.ts",
+    ".": "./src/index.ts"
+  }
+}
